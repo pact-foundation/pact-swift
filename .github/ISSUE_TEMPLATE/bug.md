@@ -10,7 +10,6 @@ assignees: ''
  - Xcode: [e.g. 11.4]
  - Platform: [e.g. iOS]
  - Version/Release: [e.g. 1.0.2]
- - Dependency manager: [e.g. Carthage 0.38]
 
 # 💬 Description
 

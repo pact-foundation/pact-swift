@@ -4,7 +4,7 @@ set -eu
 set -o pipefail
 
 # Overridable Environment
-SIMULATOR_NAME=${SIMULATOR_NAME:-'iPhone 12 Pro'}
+SIMULATOR_NAME=${SIMULATOR_NAME:-'iPhone 18 Pro'}
 SCRIPTS_DIR="${BASH_SOURCE[0]%/*}"
 
 # Determine architecture of current machine
@@ -12,14 +12,6 @@ ACTIVE_ARCH=$(uname -m)
 
 # Check for dependencies
 $SCRIPTS_DIR/check_build_tools
-
-# Carthage build
-echo "📦  Building as a Carthage dependency"
-if [[ $ACTIVE_ARCH == "x86_64" ]]; then
-	${SCRIPTS_DIR}/carthage build --no-skip-current --use-xcframeworks
-else
-	carthage build --no-skip-current --use-xcframeworks
-fi
 
 # Build and test for SPM
 echo "📦  Verifying it works using Swift Package Manager"

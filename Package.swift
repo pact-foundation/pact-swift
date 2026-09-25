@@ -4,21 +4,21 @@ import PackageDescription
 
 let package = Package(
 	name: "PactSwift",
-	
+
 	platforms: [
 		.macOS(.v13),
 		.iOS(.v16),
 	],
-	
+
 	products: [
 		.library(
 			name: "PactSwift",
 			targets: ["PactSwift"]
 		)
 	],
-	
+
 	dependencies: [
-		.package(url: "https://github.com/surpher/PactSwiftMockServerXCFramework", exact: "1.2.0"),
+		.package(url: "https://github.com/surpher/PactSwiftMockServerXCFramework", exact: "0.0.1"),
 		.package(url: "https://github.com/pointfreeco/swift-snapshot-testing", exact: "1.16.0"),
 	],
 
@@ -32,7 +32,7 @@ let package = Package(
 			],
 			path: "./Sources"
 		),
-		
+
 		// Tests
 		.testTarget(
 			name: "PactSwiftTests",
@@ -42,9 +42,6 @@ let package = Package(
 			],
 			path: "./Tests"
 		),
-		
 	],
-	
 	swiftLanguageVersions: [.v5]
-	
 )

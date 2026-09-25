@@ -8,9 +8,12 @@ coverage:
   range: "75...100"
 
   status:
-    project: yes
-    patch: yes
-    changes: no
+    project:
+      default:
+        target: auto
+    patch:
+      default:
+        target: auto
 
   ignore:
     - "Tests/**/*"

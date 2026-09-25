@@ -30,12 +30,6 @@ Use Homebrew to install [SwiftLint](https://github.com/realm/SwiftLint):
 brew install swiftlint
 ```
 
-Install [Carthage](https://github.com/Carthage/Carthage) to test your changes and PactSwift builds successfully when distributing through Carthage:
-
-```sh
-brew install carthage
-```
-
 Install [xcbeautify](https://github.com/thii/xcbeautify)
 
 ```sh
@@ -102,7 +96,6 @@ All contributions to this project are also under this license as per [GitHub's T
 [core-contributor]: Documentation/CORE_CONTRIBUTOR.md
 [fork-docs]: https://help.github.com/articles/working-with-forks/
 [github-terms-contribution]: https://help.github.com/en/github/site-policy/github-terms-of-service#6-contributions-under-repository-license
-[gist-rust]: https://gist.github.com/surpher/bbf88e191e9d1f01ab2e2bbb85f9b528
 [good-first-issue]: https://github.com/surpher/PactSwift/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22
 [issues]: https://github.com/surpher/PactSwift/issues
 [license]: LICENSE.md

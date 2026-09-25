@@ -31,7 +31,7 @@ errors=()
 #### Script steps
 
 if [[ ! -z "${INFOPLIST_FILE}" && ! -f "${INFOPLIST_FILE}" ]]; then
-    errors+=("error: Could not find Info.plist file "${INFOPLIST_FILE}" for target '${TARGET_NAME}'.")
+    errors+=("error: Could not find Info.plist file ${INFOPLIST_FILE} for target '${TARGET_NAME}'.")
 fi
 
 if [[ ! -d "${TARGET_SRCROOT}" ]]; then

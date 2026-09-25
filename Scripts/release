@@ -205,7 +205,7 @@ if [ -z "$DRY_RUN" ]; then
 	echo "--------  ✏️   Name: 	$RELEASE_NAME"
 	echo "--------"
 	echo "--------  🚀  Go and link you draft release for '$VERSION_TAG' with this tagged commit."
-	echo "--------  🔗  https://github.com/surpher/PactSwift/releases"
+	echo "--------  🔗  https://github.com/pact-reference/pact-swift/releases"
 	echo
 
 else

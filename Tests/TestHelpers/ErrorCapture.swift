@@ -34,7 +34,7 @@ class ErrorCapture: ErrorReportable {
 	func reportFailure(_ message: String) {
 		self.error = ErrorReceived(message: message, file: nil, line: nil)
 	}
-	
+
 	func reportFailure(_ message: String, file: FileString, line: UInt) {
 		self.error = ErrorReceived(message: message, file: file, line: line)
 	}
