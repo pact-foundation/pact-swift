@@ -18,8 +18,8 @@ let package = Package(
 	],
 
 	dependencies: [
-		.package(url: "https://github.com/surpher/PactSwiftMockServerXCFramework", exact: "0.0.1"),
-		.package(url: "https://github.com/pointfreeco/swift-snapshot-testing", exact: "1.16.0"),
+		.package(url: "https://github.com/surpher/PactSwiftMockServerXCFramework", exact: "1.2.0"),
+		.package(url: "https://github.com/pointfreeco/swift-snapshot-testing", from: "1.16.0"),
 	],
 
 	targets: [
